@@ -15,7 +15,7 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Boston based artist</p>
+      <p className="font-bold text-4xl text-white">Info about you</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit debitis quis totam. Maxime culpa at a architecto obcaecati consectetur nobis nesciunt excepturi odio hic ad necessitatibus, id accusamus recusandae dolorem.
@@ -27,12 +27,10 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House above the clouds</p>
+      <p className="font-bold text-4xl text-white">Art / Oil / something here?</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+        Something about your art? You'll have to tell me what to write here - if anything
       </p>
     </div>
   );
@@ -40,11 +38,10 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Greens all over</p>
+      <p className="font-bold text-4xl text-white">Ceramics</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        Same as before - currently unsure on the content here? 
       </p>
     </div>
   );
@@ -52,11 +49,10 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Rivers are serene</p>
+      <p className="font-bold text-4xl text-white">Another section</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        Unsure about this section - could be another subsection of your work? Alternatively, we use two boxes, one for paintings and one for ceramics, then use the fourth as a 'contact'? 
       </p>
     </div>
   );
@@ -81,7 +77,7 @@ const cards = [
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-    "/bluedavid.png"
+    "/ceramic.png"
   },
   {
     id: 4,

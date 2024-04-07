@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import  { LayoutGrid } from "../components/ui/layout-grid";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function LayoutGridDemo() {
   return (
@@ -27,11 +28,12 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Art / Oil / something here?</p>
+      
+      <Link href="/art"><p className="font-bold text-4xl text-white">Art / Oil / something here?</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Something about your art? You'll have to tell me what to write here - if anything
-      </p>
+      </p></Link>
     </div>
   );
 };

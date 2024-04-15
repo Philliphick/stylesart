@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function LayoutGridDemo() {
   return (
-    <div className="h-screen py-10 w-full">
+    <div className="h-dvh py-10 w-full">
       <LayoutGrid cards={cards} />
       <Footer></Footer>
     </div>
@@ -15,48 +15,52 @@ export default function LayoutGridDemo() {
 
 const SkeletonOne = () => {
   return (
-    <div>
+   <Link href="/about">
+   <div>
       <p className="font-bold text-4xl text-white">Info about you</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit debitis quis totam. Maxime culpa at a architecto obcaecati consectetur nobis nesciunt excepturi odio hic ad necessitatibus, id accusamus recusandae dolorem.
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 md:text-2xl">
+      short description - CLICK TO READ MORE
       </p>
     </div>
+    </Link>
   );
 };
 
 const SkeletonTwo = () => {
   return (
-    <div>
-      
-      <Link href="/art"><p className="font-bold text-4xl text-white">Art / Oil / something here?</p>
+    <Link href="/art">
+    <div>  
+      <p className="font-bold text-4xl text-white">Paintings</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Something about your art? You'll have to tell me what to write here - if anything
-      </p></Link>
-    </div>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 md:text-2xl">
+        Short description - CLICK TO VIEW
+      </p>
+    </div></Link>
   );
 };
 const SkeletonThree = () => {
   return (
-    <div>
+    <Link href="/art"><div>
       <p className="font-bold text-4xl text-white">Ceramics</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Same as before - currently unsure on the content here? 
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 md:text-2xl">
+        Short description - CLICK TO VIEW
       </p>
     </div>
+    </Link>
   );
 };
 const SkeletonFour = () => {
-  return (
-    <div>
-      <p className="font-bold text-4xl text-white">Another section</p>
+  return  (
+    <Link href="/art"><div>
+      <p className="font-bold text-4xl text-white">Prints</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Unsure about this section - could be another subsection of your work? Alternatively, we use two boxes, one for paintings and one for ceramics, then use the fourth as a 'contact'? 
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 md:text-2xl">
+        Short description - CLICK TO VIEW 
       </p>
     </div>
+    </Link>
   );
 };
 
